@@ -1,0 +1,9 @@
+ipywidgets==8.0.2
+notebook==6.4.12
+ensure==1.0.2
+mkdocs-material
+scikit-learn
+xgboost
+numpy
+pandas
+-e .
