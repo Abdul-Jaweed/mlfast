@@ -1,6 +1,5 @@
 # mlfast
 
-
 This Python machine learning package is built on top of scikit-learn and provides a simple API for regression and classification modeling. The main function in this package is called Regression() and Classification() which takes in the following arguments:
 
 `X`: The independent variables (features) of the data set
@@ -216,5 +215,6 @@ Classification(X, y, model = 'xbg',scaler = 'standard', cat=True)
 - Image Preprocessing
 - And many more
 
-**ADDED SOON**
 
+
+**ADDED SOON**
