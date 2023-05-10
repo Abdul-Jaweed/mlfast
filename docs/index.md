@@ -52,7 +52,7 @@ Regression(X, y, model = 'lr')
 **Ridge Regression**  -> 'ridge ' 
 ```python
 
-Regression(X, y, model = 'ridge ', scaler =  'standard')
+Regression(X, y, model = 'ridge', scaler =  'standard')
 
 ```
 
@@ -91,7 +91,7 @@ Regression(X, y, model = 'dt')
 **Support Vector Machine Regression**  -> 'svm ' 
 ```python
 
-Regression(X, y, model = 'svm ', scaler =  'standard')
+Regression(X, y, model = 'svm', scaler =  'standard')
 
 ```
 
@@ -170,7 +170,7 @@ Classification(X, y, model = 'dt')
 **Support Vector Machine Classifier**  -> 'svm ' 
 ```python
 
-Classification(X, y, model = 'svm ', scaler =  'standard')
+Classification(X, y, model = 'svm', scaler =  'standard')
 
 ```
 
