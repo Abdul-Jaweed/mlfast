@@ -213,14 +213,16 @@ Classification(X, y, model = 'xbg',scaler = 'standard', cat=True)
 
 The provided code snippet applies Text **Preprocessing** to a series or column of text data. It allows for flexible control over different preprocessing steps through boolean flags. Here is a summary of the options:
 
-- stem: Determines whether stemming should be performed. Set to True to enable stemming, or False to disable it.
-- lemmatize: Controls lemmatization. Set to True to enable lemmatization, or False to disable it.
-- remove_html: Specifies whether HTML tags should be removed. Use True to remove HTML tags, or False to keep them.
-- remove_emoji: Determines whether emojis should be removed from the text. Set to True to remove emojis, or False to retain them.
-- remove_special_chars: Controls the removal of special characters. Use True to remove special characters, or False to keep them.
-- remove_extra_spaces: Specifies whether extra spaces should be removed. Set to True to remove extra spaces, or False to keep them.
+- `stem`: Determines whether stemming should be performed. Set to `True` to enable stemming, or `False` to disable it.
+- `lemmatize`: Controls lemmatization. Set to `True` to enable lemmatization, or `False` to disable it.
+- `remove_html`: Specifies whether HTML tags should be removed. Use `True` to remove HTML tags, or `False` to keep them.
+- `remove_emoji`: Determines whether emojis should be removed from the text. Set to `True` to remove emojis, or `False` to retain them.
+- `remove_special_chars`: Controls the removal of special characters. Use `True` to remove special characters, or `False` to keep them.
+- `remove_extra_spaces`: Specifies whether extra spaces should be removed. Set to `True` to remove extra spaces, or `False` to keep them.
 
-By setting these flags to either True or False, you can customize the preprocessing steps according to your requirements. The code applies the specified preprocessing steps to each text element in the series or column and returns the processed text.
+By setting these flags to either `True` or `False`, you can customize the preprocessing steps according to your requirements. The code applies the specified preprocessing steps to each text element in the series or column and returns the processed text.
+
+
 
 
 **Text preprocessing sample code**
@@ -237,7 +239,7 @@ df['review'].apply(Text_preprocessing,
                   remove_emoji=True,
                   remove_special_chars=True,
                   remove_extra_spaces=True)
-                  
+
 ```
 
 
