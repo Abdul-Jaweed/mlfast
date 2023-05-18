@@ -7,5 +7,5 @@ xgboost
 numpy
 pandas
 nltkpip 
-emoji
+emoji==2.2.0
 -e .
