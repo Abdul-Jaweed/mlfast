@@ -4,6 +4,8 @@ nltk.download("stopwords")
 from nltk.corpus import stopwords
 
 stopwords.words("english")
+nltk.download('punkt')
+nltk.download('wordnet')
 from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer, WordNetLemmatizer
 import re

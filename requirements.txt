@@ -6,6 +6,6 @@ scikit-learn
 xgboost
 numpy
 pandas
-nltk
+nltkpip 
 emoji
 -e .
