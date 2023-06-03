@@ -4,8 +4,8 @@ nltk.download("stopwords")
 from nltk.corpus import stopwords
 
 stopwords.words("english")
-nltk.download('punkt')
-nltk.download('wordnet')
+nltk.download("punkt")
+nltk.download("wordnet")
 from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer, WordNetLemmatizer
 import re
@@ -35,25 +35,23 @@ def Text_preprocessing(
     # if remove_emoji:
     #     text = emoji.demojize(text)
     #     text = re.sub(r":[a-zA-Z_]+:", "", text)
-        
-    
+
     # Removing emojis
     if remove_emoji:
-        emoji_pattern = re.compile("["
-                               u"\U0001F600-\U0001F64F"  # emoticons
-                               u"\U0001F300-\U0001F5FF"  # symbols & pictographs
-                               u"\U0001F680-\U0001F6FF"  # transport & map symbols
-                               u"\U0001F1E0-\U0001F1FF"  # flags (iOS)
-                               u"\U00002702-\U000027B0"  # other miscellaneous symbols
-                               u"\U000024C2-\U0001F251" 
-                               "]+", flags=re.UNICODE)
+        emoji_pattern = re.compile(
+            "["
+            "\U0001F600-\U0001F64F"  # emoticons
+            "\U0001F300-\U0001F5FF"  # symbols & pictographs
+            "\U0001F680-\U0001F6FF"  # transport & map symbols
+            "\U0001F1E0-\U0001F1FF"  # flags (iOS)
+            "\U00002702-\U000027B0"  # other miscellaneous symbols
+            "\U000024C2-\U0001F251"
+            "]+",
+            flags=re.UNICODE,
+        )
     text = emoji_pattern.sub(r"", text)
     text = re.sub(r":[a-zA-Z_]+:", "", text)  # Remove emoji names within colons
     text = re.sub(r"\s+", " ", text)  # Remove extra spaces
-    
-    
-    
-    
 
     # Removing special characters
     if remove_special_chars:
