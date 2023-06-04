@@ -29,6 +29,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+        pip install openai==0.27.7
+        pip install gradio==3.33.1
         pip install flake8 pytest
         pip install -r requirements.txt
         pip install build
