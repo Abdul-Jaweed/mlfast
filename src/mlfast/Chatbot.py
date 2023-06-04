@@ -25,17 +25,13 @@ def Chatbot(api_key, role, deploy=False):
             return "Goodbye!"
 
         # Generate a response from the chatbot
-        response = openai.Completion.create(
-            engine="gpt-3.5-turbo",
-            prompt="\n".join([f"{m['role']}: {m['content']}" for m in messages]),
-            temperature=0.7,
-            max_tokens=50,
-            n=1,
-            stop=None
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            messages=messages
         )
 
         # Get the assistant's reply from the response
-        reply = response.choices[0].text.strip()
+        reply = response.choices[0].message.content
 
         # Add assistant's reply to the conversation
         messages.append({"role": "assistant", "content": reply})
