@@ -131,3 +131,4 @@ dmypy.json
 # ignore log files 
 *.log
 .vscode/*
+.circleci/
